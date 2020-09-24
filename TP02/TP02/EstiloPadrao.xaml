@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.EstiloPadrao"
+             Title="Estilo Visual - Simples">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Style="{StaticResource lblStyle}" Text="SHIFT - Xamarin" HorizontalOptions="Center" FontSize="Title"/>
+            <Label Style="{StaticResource lblStyle1}" Text="Aplicativos Cross-Platforn" HorizontalOptions="Center" FontSize="Title"/>
+            <StackLayout Margin="10">
+                <Grid HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Entry Style="{StaticResource entStyle}"></Entry>
+                    <Button Style="{StaticResource btnStyle}" Text="Clique Aqui" Grid.Row="1" Grid.Column="0"></Button>
+                    <Button  Text="Sem Estilo" Grid.Row="2" Grid.Column="0"></Button>
+                </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

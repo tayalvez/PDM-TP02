@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.Home">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Margin="20">
+                <Label Text="Contato" FontSize="Title" HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Padding="25">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="250"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="VerticalOptions" Value="Center" />
+                        </Style>
+                    </Grid.Resources>
+
+                    <Label Text="Nome: "
+                       FontSize="Body"
+                       Grid.Row="0" Grid.Column="0"
+                       HorizontalOptions="Center"/>
+
+                    <Entry  x:Name="nome" Placeholder="" Grid.Row="0" Grid.Column="1"></Entry>
+
+                    <Label Text="Idade: "
+                               FontSize="Body"
+                               Grid.Row="1" Grid.Column="0" 
+                               HorizontalOptions="Center"/>
+
+                    <Entry x:Name="idade" Placeholder=""  Keyboard="Numeric"   Grid.Row="1" Grid.Column="1" ClearButtonVisibility="WhileEditing"></Entry>
+                    <Label Text="Profissão: "
+                               FontSize="Body"
+                               Grid.Row="2" Grid.Column="0" 
+                               HorizontalOptions="Center"/>
+
+                    <Entry x:Name="profissao" Placeholder=""  Grid.Row="2" Grid.Column="1" ClearButtonVisibility="WhileEditing"></Entry>
+                    <Label Text="País: "
+                               FontSize="Body"
+                               Grid.Row="3" Grid.Column="0" 
+                               HorizontalOptions="Center"/>
+
+                    <Entry x:Name="pais" Placeholder=""  Grid.Row="3" Grid.Column="1" ClearButtonVisibility="WhileEditing"></Entry>
+
+                </Grid>
+            </StackLayout>
+            <StackLayout>
+                <Grid HorizontalOptions="Center">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250" />
+                    </Grid.ColumnDefinitions>
+
+                    <Button  BackgroundColor="#87CEEB" TextColor="White" Text="OK" Grid.Row="0" Grid.Column="0" Clicked="btnDetalhe" ></Button>
+
+                </Grid>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

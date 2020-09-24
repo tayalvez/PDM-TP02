@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TP02"
+             x:Class="TP02.EstiloDinamico"
+             BackgroundColor="White">
+    <ContentPage.Content >
+
+       
+        <StackLayout>
+
+            <Grid HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Row="4" Grid.Column="0" BackgroundColor="Pink">
+                    <Label 
+                    Text="{Binding DateTime, StringFormat='{0:T}'}"
+                    Style="{StaticResource lblStyle2}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        FontSize="58">
+                        <Label.BindingContext>
+                            <local:RelogioViewModel />
+                        </Label.BindingContext>
+                    </Label>
+
+                </StackLayout>
+               
+                
+            </Grid>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

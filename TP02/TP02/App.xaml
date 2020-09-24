@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.App">
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <Style x:Key="btnStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#87CEEB" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style x:Key="lblStyle" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="Silver" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Rotation" Value="-5" />
+            </Style>
+            <Style x:Key="lblStyle1" TargetType="Label">
+                <Setter Property="BackgroundColor" Value="LightPink" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Rotation" Value="5" />
+            </Style>
+            <Style x:Key="entStyle" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="AliceBlue" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+            <Style x:Key="lblStyle2" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="TextColor" Value="White" />
+                
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

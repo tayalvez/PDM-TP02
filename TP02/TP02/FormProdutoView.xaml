@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.FormProdutoView">
+    <ContentPage.Content>
+        <StackLayout Padding="10" >
+            <StackLayout >
+                <Label Text="Id:" FontSize="Medium"
+HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Id}" />
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Descrição:" FontSize="Medium"
+HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Descricao}"  />
+            </StackLayout>
+            <StackLayout >
+                <Label Text="Categoria:" FontSize="Medium"
+HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Categoria}"  />
+            </StackLayout>
+            <StackLayout >
+                <Label Text="Quantidade:" FontSize="Medium"
+HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Quantidade}"/>
+            </StackLayout>
+            <StackLayout >
+                <Label Text="Preço:" FontSize="Medium"
+HorizontalOptions="FillAndExpand" />
+                <Entry Text="{Binding Preco}"  />
+            </StackLayout>
+            <Button x:Name="btnCadastrar" Text="Cadastrar" 
+/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

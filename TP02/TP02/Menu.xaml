@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP02.Menu"
+             BackgroundColor="#F8F8FF">
+    <ScrollView>
+            <StackLayout>            
+                <Label Text="Style Resources" FontSize="Title" HorizontalOptions="Center"></Label>            
+                <Grid HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button BackgroundColor="#87CEEB" TextColor="White" Text="Estilo Padão" Grid.Row="0" Grid.Column="0" Clicked="EstiloPadrao" ></Button>
+                <Button BackgroundColor="#87CEEB" TextColor="White" Text="Estilo Dinâmico" Grid.Row="1" Grid.Column="0" Clicked="EstiloDinamico"></Button>
+                <Button BackgroundColor="#87CEEB" TextColor="White"  Text="Estilo Event Triggers" Grid.Row="2" Grid.Column="0" Clicked="TriggerView"></Button>
+                    <Button BackgroundColor="#87CEEB" TextColor="White"  Text="Estilo Global" Grid.Row="3" Grid.Column="0"></Button>
+            </Grid>
+
+            <Label Text="Passar Parametros" FontSize="Title" HorizontalOptions="Center" ></Label>
+                
+                <Grid HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />                       
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button BackgroundColor="#87CEEB" TextColor="White" Text="Home" Clicked="Home" Grid.Row="0" Grid.Column="0"  ></Button>
+                    <Button BackgroundColor="#87CEEB" TextColor="White" Text="Messaging Center" Grid.Row="1" Grid.Column="0"></Button>
+                </Grid>
+
+            <Label Text="ListView" FontSize="Title"  HorizontalOptions="Center"></Label>
+                
+                <Grid HorizontalOptions="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button BackgroundColor="#87CEEB" TextColor="White" Text="Simples" Clicked="ListViewSimples" Grid.Row="0" Grid.Column="0"  ></Button>
+                    <Button BackgroundColor="#87CEEB" TextColor="White" Text="Classe Complexa" Grid.Row="1" Grid.Column="0"></Button>
+                    <Button BackgroundColor="#87CEEB" TextColor="White" Text="Produto" Grid.Row="2" Grid.Column="0" Clicked="Produto"></Button>
+                </Grid>
+                
+            </StackLayout>
+        </ScrollView>
+
+</ContentPage>
