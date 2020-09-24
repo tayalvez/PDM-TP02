@@ -22,7 +22,7 @@ namespace TP02
         private async void Home(object sender, EventArgs e)
         {
 
-            await Navigation.PushAsync(new Home());
+            await Navigation.PushAsync(new Menu());
 
         }
 
